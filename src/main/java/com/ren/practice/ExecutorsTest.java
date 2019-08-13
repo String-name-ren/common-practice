@@ -28,8 +28,8 @@ public class ExecutorsTest {
             limiter.acquire();
             executorService.submit(new Runnable() {
                 public void run() {
-                //...发送请求
-                System.out.println(queryNo + ":" + Calendar.getInstance().getTimeInMillis());
+                    //...发送请求
+                    System.out.println(queryNo + ":" + Calendar.getInstance().getTimeInMillis());
                 }
             });
         }
